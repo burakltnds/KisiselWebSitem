@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: "Roboto", serif;
-    background-color: #282828; /* Tüm sayfa arka planı navbarla aynı renk koyu gri */
+    background-color: #282828;
 }
 
 img {
@@ -26,29 +26,25 @@ section {
 }
 
 /* Başlıklar */
-.section_title {
-    margin-bottom: 30px;
-}
-
 .section_title h2 {
-    position: relative;
     text-align: center;
-    color: #ebdbb2; /* Açık sarımsı ton */
+    color: #ebdbb2;
     font-size: 30px;
     transition: all .5s ease-in-out;
 }
 
 .section_title h2:hover {
-    background-color: #ff9800; /* Hoverda turuncuya yakın sarı */
+    background-color: #ff9800;
 }
 
 /* HEADER */
 header {
-    background: #282828; /* Navbar arka plan rengi */
+    background: #282828;
     border-bottom: 5px solid rgba(255, 5, 5, 0.801);
     position: fixed;
     width: 100%;
     z-index: 5;
+    padding: 10px 0;
 }
 
 .navbar {
@@ -57,7 +53,6 @@ header {
     align-items: center;
     margin: 0 auto;
     width: 80%;
-    padding: 10px 0;
 }
 
 .nav_links {
@@ -69,27 +64,22 @@ header {
 }
 
 .nav_links li a {
-    color: #ff9800; /* Link yazı rengi turuncu */
+    color: #ff9800;
     padding: 5px 15px;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
 
 .nav_links li a:hover {
-    background: #ff5722; /* Hoverda link rengi değişir */
+    background: #ff5722;
 }
 
-/* LOGO */
-.logo h2 a {
-    color: #daa454; /* Buradaki renk turuncu, istediğiniz renge göre değiştirin */
-    text-transform: uppercase; /* Başlık büyük harflerle yazılır */
-    font-size: 30px; /* Yazının boyutunu ayarlayabilirsiniz */
-    font-weight: bold; /* Yazıyı kalın yapar */
-    transition: color 0.3s ease; /* Renk değişimini yumuşak hale getirir */
-}
-
-.logo h2 a:hover {
-    color: #ff3c00; /* Hover (üzerine gelince) rengini değiştirmek için */
+/* Mobil Menü */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #ff9800;
+    cursor: pointer;
 }
 
 /* ANASAYFA */
@@ -99,13 +89,7 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     width: 80%;
-    color: #ff9800; /* Yazı rengi turuncu */
-}
-
-.inner_anasayfa img {
-    width: 100%;  /* Fotoğrafın genişliğini %100 yap */
-    height: auto; /* Yüksekliği otomatik olarak ayarlayacak */
-    object-fit: cover; /* Fotoğrafın en boy oranını koruyarak kaplamasını sağla */
+    flex-wrap: wrap;
 }
 
 .child_anasayfa {
@@ -114,136 +98,21 @@ header {
 
 .child_anasayfa h1 {
     font-size: 50px;
-    color: #ff9800; /* Başlık rengi turuncu */
-}
-
-.span_child {
-    color: #ebdbb2; /* Başlık altındaki yazı rengi açık sarımsı */
-}
-
-.child_anasayfa {
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.btn {
-    background: #ff5722; /* Buton arka plan rengi */
-    padding: 12px 28px;
-    border-radius: 20px;
-    color: #ebdbb2; /* Buton yazı rengi */
-    border: 1px solid #24caa2;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .3s ease;
-}
-
-.btn:hover {
-    background: transparent;
-    letter-spacing: 2px;
-}
-
-/* SERTİFİKALARIM */
-.inner_courses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.child_courses {
-    flex-basis: 24%;
-    color: #ebdbb2;
-    padding: 20px 10px;
-    border: 1px solid transparent;
-    transition: .3s;
-    border-radius: 5px;
-    background-color: #282828; /* Arka planın koyu rengini ayarladım */
-    text-align: center; /* Altındaki yazıları ortalar */
-}
-
-.child_courses h3 {
-    margin-top: 10px; /* Başlık ile altındaki yazı arasına mesafe ekler */
-}
-
-.child_courses:hover {
-    background-color: #ff9800; /* Hover efekti ile arka plan rengi sarı olur */
-    color: white; /* Hover sırasında yazı rengi beyaz olur */
-    border: 1px solid #ff9800; /* Border rengi de sarı olur */
-    transform: scale(1.1); /* Öğeyi %10 büyütür */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Öne çıkma efekti için gölge ekler */
-}
-
-
-/* Yetenekler */
-#yetenekler {
-    padding: 50px 20px;
-    background-color: #282828; /* Yetenekler arka planı koyu gri, navbarla aynı renk */
-    text-align: center;
-}
-
-#yetenekler .section_title h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    color: #ffffff; /* Yetenekler başlık rengi turuncu */
-    margin-bottom: 30px;
-}
-
-.tools_gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.tool_card {
-    width: 150px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    background-color: #282828; /* Kart arka planı koyu gri */
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.tool_card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.tool_card p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #ebdbb2; /* Yazı rengi açık sarımsı */
-}
-
-.tool_card:hover {
-    transform: scale(1.1);
-    background-color: #ff9800; /* Hoverda arka plan turuncuya yakın sarı olacak */
+    color: #ff9800;
 }
 
 /* HAKKIMDA */
 #hakkimda {
     padding: 50px 20px;
     text-align: center;
-    background-color: #282828; /* Hakkımda arka planı koyu gri, navbarla aynı renk */
-    color: #ebdbb2; /* Yazı rengi açık sarımsı */
+    background-color: #282828;
+    color: #ebdbb2;
 }
 
 #hakkimda .section_title h2 {
-    font-family: 'Oswald', sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
-    color: #ffffff; /* Başlık rengi turuncu */
-}
-
-#hakkimda .inner_about p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
+    color: #ffffff;
 }
 
 /* İLETİŞİM */
@@ -256,20 +125,63 @@ header {
 }
 
 .contact_icon img {
-    width: 50px; /* İkon boyutunu ayarlayın */
+    width: 50px;
     height: 50px;
     transition: transform 0.3s ease;
 }
 
 .contact_icon img:hover {
-    transform: scale(1.2); /* Hover efektiyle ikon büyüme */
+    transform: scale(1.2);
 }
 
-/* Genel Arka Plan Renkleri */
-#anasayfa,
-#sertifikalarim,
-#yetenekler,
-#hakkimda,
-#iletisim {
-    background-color: #282828; /* Tüm sayfa arka planı koyu gri navbarla aynı renk */
+/* RESPONSIVE TASARIM */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+
+    .nav_links li {
+        margin: 10px 0;
+    }
+
+    .inner_anasayfa {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .child_anasayfa {
+        flex-basis: 100%;
+    }
+    
+    .child_anasayfa h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .child_anasayfa h1 {
+        font-size: 28px;
+    }
 }
