@@ -80,17 +80,14 @@ header {
 }
 
 /* LOGO */
-.logo h2 a {
-    color: #daa454;
+.logo h1 a {
+    color: #ff9800;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-.logo h2 a:hover {
-    color: #ff3c00;
-}
+
 
 /* ANASAYFA */
 .inner_anasayfa {
