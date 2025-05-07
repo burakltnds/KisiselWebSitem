@@ -45,7 +45,7 @@ section {
 /* HEADER */
 header {
     background: #282828;
-    border-bottom: 5px solid rgba(255, 5, 5, 0.801);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.801);
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -145,14 +145,14 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .child_courses {
     flex-basis: 24%;
     color: #ebdbb2;
-    padding: 20px 10px;
+    padding: 10px 5px;
     border: 1px solid transparent;
     transition: .3s;
     border-radius: 5px;
@@ -268,81 +268,4 @@ header {
 #hakkimda,
 #iletisim {
     background-color: #282828;
-}
-
-/* Mobil Uyumluluk */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav_links {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav_links li {
-        margin: 10px 0;
-    }
-
-    .inner_anasayfa {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .child_anasayfa {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-    }
-
-    .child_anasayfa h1 {
-        font-size: 40px;
-    }
-
-    .inner_courses {
-        flex-direction: column;
-    }
-
-    .child_courses {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-    }
-
-    .tools_gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tool_card {
-        width: 80%;
-    }
-
-    .contact_info {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .child_anasayfa h1 {
-        font-size: 30px;
-    }
-
-    .section_title h2 {
-        font-size: 24px;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .tool_card img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .tool_card p {
-        font-size: 14px;
-    }
 }
